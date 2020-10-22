@@ -549,11 +549,12 @@ export class Wallet extends React.Component {
     this.runModal('Sending Transaction', 'Please wait...', async () => {
       const amount = this.state.recipientAmount;
       this.setState({requestedAmount: '', requestPending: false});
-      const transaction = web3.SystemProgram.transfer({
+
+      const transaction = new web3.Transaction().add(web3.SystemProgram.transfer({
         fromPubkey: this.state.account.publicKey,
         toPubkey: new web3.PublicKey(this.state.recipientPublicKey),
         lamports: amount,
-      });
+      }));
 
       let signature = '';
       try {
@@ -561,7 +562,7 @@ export class Wallet extends React.Component {
           this.web3sol,
           transaction,
           [this.state.account],
-          {confirmations: 1},
+          // {confirmations: 1},
         );
       } catch (err) {
         // Transaction failed but fees were still taken

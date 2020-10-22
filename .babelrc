@@ -12,6 +12,6 @@
   "plugins": [
     "transform-class-properties",
     "transform-function-bind",
-    "transform-runtime",
+    "transform-runtime"
   ]
 }

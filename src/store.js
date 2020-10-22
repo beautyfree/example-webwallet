@@ -56,9 +56,12 @@ export class Store {
       );
       // commitment params are only supported >= 0.21.0
       const version = await connection.getVersion();
+
       const solanaCoreVersion = version['solana-core'].split(' ')[0];
       if (gte(solanaCoreVersion, '0.21.0')) {
         connection = new web3.Connection(url, 'recent');
+      } else {
+        console.error('Wrong solana version:', solanaCoreVersion);
       }
     } catch (err) {
       console.error('Failed to reset connection', err);
