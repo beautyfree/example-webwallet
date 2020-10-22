@@ -53,6 +53,8 @@ THE SOFTWARE.
 
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 
+/*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
 /**
  * Support for translating between Buffer instances and JavaScript
  * native types.
@@ -171,7 +173,7 @@ THE SOFTWARE.
  * LICENSE file in the root directory of this source tree.
  */
 
-/** @license React v16.11.0
+/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -180,7 +182,7 @@ THE SOFTWARE.
  * LICENSE file in the root directory of this source tree.
  */
 
-/** @license React v16.13.1
+/** @license React v16.14.0
  * react-dom.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -189,7 +191,7 @@ THE SOFTWARE.
  * LICENSE file in the root directory of this source tree.
  */
 
-/** @license React v16.13.1
+/** @license React v16.14.0
  * react.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
