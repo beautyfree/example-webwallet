@@ -562,7 +562,6 @@ export class Wallet extends React.Component {
           this.web3sol,
           transaction,
           [this.state.account],
-          // {confirmations: 1},
         );
       } catch (err) {
         // Transaction failed but fees were still taken
