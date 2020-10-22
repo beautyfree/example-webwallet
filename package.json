@@ -73,6 +73,6 @@
     "semver": "^7.0.0",
     "sha256": "^0.2.0",
     "style-loader": "^1.0.0",
-    "tweetnacl": "^1.0.0"
+    "tweetnacl": "^1.0.3"
   }
 }
